@@ -1,2 +1,2 @@
-# Jesse Bettridge React Portfoliio Application
+# Jesse Bettridge React Portfolio Application
 
