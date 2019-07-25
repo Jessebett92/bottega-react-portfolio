@@ -96,7 +96,7 @@ export default class PortfolioManager extends Component {
         <div className="left-column">
           <PortfolioForm
             handleEditFormSubmission={this.handleEditFormSubmission}
-            handleNewFormSubmission={this.handleSuccessfulFormSubmission}
+            handleNewFormSubmission={this.handleNewFormSubmission}
             handleFormSubmissionError={this.handleFormSubmissionError}
             clearPortfolioToEdit={this.clearPortfolioToEdit}
             portfolioToEdit={this.state.portfolioToEdit}
