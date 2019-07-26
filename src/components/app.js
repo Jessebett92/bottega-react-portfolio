@@ -50,9 +50,12 @@ export default class App extends Component {
 
   checkLoginStatus() {
     return axios
-      .get("https://api.devcamp.space/logged_in", {
-        withCredentials: true
-      })
+      .get(
+        "https://cors-anywhere.herokuapp.com/https://api.devcamp.space/logged_in",
+        {
+          withCredentials: true
+        }
+      )
       .then(response => {
         const loggedIn = response.data.logged_in;
         const loggedInStatus = this.state.loggedInStatus;
