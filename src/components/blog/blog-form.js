@@ -134,7 +134,7 @@ export default class BlogForm extends Component {
         }
       })
       .catch(error => {
-        console.log("handleSubmit for blog error", error);
+        console.log("handleSubmit blog error", error);
       });
 
     event.preventDefault();
