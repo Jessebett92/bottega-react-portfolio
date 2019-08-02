@@ -69,19 +69,19 @@ export default class PortfolioContainer extends Component {
             className="btn"
             onClick={() => this.handleFilter("eCommerce")}
           >
-            eCommerce
+            Personal Projects
           </button>
           <button
             className="btn"
             onClick={() => this.handleFilter("Scheduling")}
           >
-            Scheduling
+            Experimenting
           </button>
           <button
             className="btn"
             onClick={() => this.handleFilter("Enterprise")}
           >
-            Enterprise
+            Fun Stuff
           </button>
           <button
             className="btn"

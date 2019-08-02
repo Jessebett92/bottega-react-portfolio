@@ -53,7 +53,7 @@ export default class BlogForm extends Component {
       this.setState({
         id: this.props.blog.id,
         title: this.props.blog.title,
-        blog_status: this.props.blog_status,
+        blog_status: this.props.blog.blog_status,
         content: this.props.blog.content,
         apiUrl: `https://jessebettridge.devcamp.space/portfolio/portfolio_blogs/${
           this.props.blog.id
@@ -172,7 +172,7 @@ export default class BlogForm extends Component {
         <div className="one-column">
           <RichTextEditor
             handleRichTextEditorChange={this.handleRichTextEditorChange}
-            editMode={this.props.editMode}
+            editMode={this.props.editMode || null}
             contentToEdit={
               this.props.editMode && this.props.blog.content
                 ? this.props.blog.content
@@ -196,7 +196,7 @@ export default class BlogForm extends Component {
             <DropzoneComponent
               ref={this.featuredImageRef}
               config={this.componentConfig()}
-              dfsConfig={this.djsConfig()}
+              djsConfig={this.djsConfig()}
               eventHandlers={this.handleFeaturedImageDrop()}
             >
               <div className="dz-message">Featured Image</div>

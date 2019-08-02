@@ -173,11 +173,9 @@ export default class PortfolioForm extends Component {
           thumb_image: "",
           banner_image: "",
           logo: "",
-          editMode: true,
-          apiUrl: `https://jessebettridge.devcamp.space/portfolio/portfolio_items/${
-            this.state.id
-          }`,
-          apiAction: "patch"
+          editMode: false,
+          apiUrl: `https://jessebettridge.devcamp.space/portfolio/portfolio_items`,
+          apiAction: "post"
         });
 
         [this.thumbRef, this.bannerRef, this.logoRef].forEach(ref => {

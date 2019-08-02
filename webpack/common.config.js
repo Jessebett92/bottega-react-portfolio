@@ -1,16 +1,16 @@
 // webpack plugins
-const SplitChunksPlugin = require('webpack/lib/optimize/SplitChunksPlugin');
+const SplitChunksPlugin = require("webpack/lib/optimize/SplitChunksPlugin");
 
 module.exports = {
   entry: {
-    app: ['./src/bootstrap.js'],
-    vendor: './src/vendor.js',
+    app: ["./src/bootstrap.js"],
+    vendor: "./src/vendor.js"
   },
 
   resolve: {
-    extensions: ['.js', '.scss'],
+    extensions: [".js", ".scss"],
 
-    modules: ['node_modules'],
+    modules: ["node_modules"]
   },
 
   module: {
@@ -18,30 +18,30 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: ["babel-loader"]
       },
 
       {
-        type: 'javascript/auto',
+        type: "javascript/auto",
         test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)$/,
-        loader: 'file-loader',
+        loader: "file-loader",
         options: {
-          name: '[path][name].[ext]',
-          publicPath: '/',
-        },
+          name: "[path][name].[ext]",
+          publicPath: "/"
+        }
       },
 
       {
         test: /\.(mp4|webm)$/,
-        loader: 'url?limit=10000',
-      },
-    ],
+        loader: "url?limit=10000"
+      }
+    ]
   },
 
   plugins: [
     new SplitChunksPlugin({
-      name: ['app', 'vendor'],
-      minChunks: Infinity,
-    }),
-  ],
+      name: ["app", "vendor"],
+      minChunks: Infinity
+    })
+  ]
 };
