@@ -20,14 +20,14 @@ export default function() {
             <div className="icon">
               <FontAwesomeIcon icon="phone" />
             </div>
-            <div className="text">555-555-5555</div>
+            <div className="text">435-216-2698</div>
           </div>
 
           <div className="bullet-point-group">
             <div className="icon">
               <FontAwesomeIcon icon="envelope" />
             </div>
-            <div className="text">jesse@example.com</div>
+            <div className="text">jessebett92@gmail.com</div>
           </div>
 
           <div className="bullet-point-group">

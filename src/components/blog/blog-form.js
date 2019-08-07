@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import axios from "axios";
 import DropzoneComponent from "react-dropzone-component";
 
+import filepickerCss from "../../../node_modules/react-dropzone-component/styles/filepicker.css";
+import dropzoneCss from "../../../node_modules/dropzone/dist/min/dropzone.min.css";
+
 import RichTextEditor from "../forms/rich-text-editor";
 
 export default class BlogForm extends Component {
@@ -27,7 +30,6 @@ export default class BlogForm extends Component {
     this.componentConfig = this.componentConfig.bind(this);
     this.djsConfig = this.djsConfig.bind(this);
     this.handleFeaturedImageDrop = this.handleFeaturedImageDrop.bind(this);
-    this.deleteImage = this.deleteImage.bind(this);
     this.deleteImage = this.deleteImage.bind(this);
     this.featuredImageRef = React.createRef();
   }
@@ -162,7 +164,6 @@ export default class BlogForm extends Component {
           <input
             type="text"
             onChange={this.handleChange}
-            type="text"
             name="blog_status"
             placeholder="Blog status"
             value={this.state.blog_status}
