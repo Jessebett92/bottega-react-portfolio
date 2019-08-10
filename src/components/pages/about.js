@@ -1,5 +1,5 @@
 import React from "react";
-import BioPic from "../../../static/assets/images/bio/bottega.jpg";
+import BioPic from "../../../static/assets/images/bio/bio.jpg";
 
 export default function() {
   return (
