@@ -14,7 +14,7 @@ export default function() {
       />
 
       <div className="right-column">
-        My passion for programming stems from when I attended Dixie State
+        My passion for technology stems from when I attended Dixie State
         University. I first learned how computers could be used to solve real
         world problems and that led me to getting my first junior developer job
         at Ez HealthCare. Since then, I have learned full-stack development and
