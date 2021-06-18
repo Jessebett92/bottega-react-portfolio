@@ -76,7 +76,7 @@
     "react-truncate": "^2.4.0",
     "redux": "^3.7.2",
     "sass-loader": "^7.1.0",
-    "striptags": "^3.1.1",
+    "striptags": "^3.2.0",
     "style-loader": "^0.21.0",
     "webpack": "^4.16.4",
     "webpack-cli": "^3.1.1",
